@@ -51,7 +51,7 @@ p {
 
 header {
   height: 50vw;
-  background: url('/assets/Layer\ 7.png') no-repeat;
+  background: url('assets/Layer\ 7.png') no-repeat;
   background-position: center;
   background-size: cover;
 }
