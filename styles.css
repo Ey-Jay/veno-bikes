@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+
+body {
+  font-family: 'Roboto',
+    sans-serif;
+  color: #141414;
+}
+
+a {
+  color: #141414;
+}
+
+h1,
+h2 {
+  font-weight: 500;
+}
+
+header {
+  height: 50vw;
+  background: url('/assets/Layer\ 7.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* navigation styles */
+
+.main-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+}
+
+.main-navigation a {
+  padding: 0 35px;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  font-size: 0.9rem;
+}
+
+.include-separator::after {
+  content: ".";
+  position: absolute;
+  right: 0;
+}
