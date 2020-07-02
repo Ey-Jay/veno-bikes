@@ -6,10 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
   <title>Velo</title>
 </head>
 
 <body>
+  <div class="mobile-nav">
+    <img src="assets/Logo.png" alt="Logo Image" />
+    <div class="burger" onclick="transformBurgerToX(this)">
+      <div class="burger-line1"></div>
+      <div class="burger-line2"></div>
+      <div class="burger-line3"></div>
+    </div>
+    <nav class="mobile-navigation hide-mobile-navigation">
+      <a href="#">ABOUT US</a>
+      <a href="#">WORK</a>
+      <a href="#">SHOP</a>
+      <a href="#">CONTACT</a>
+    </nav>
+  </div>
   <header>
     <nav class="main-navigation">
       <a class="include-separator" href="#">ABOUT US</a>
