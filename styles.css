@@ -1,31 +1,3 @@
-/* 
-color-pallete: 
-nav-color: #4d4959
-nav-font-size: 13px (0.8rem)
-h2-color: 353738
-h2-size: 18px (1.125rem)
-about-bg: f7f7f7
-about-p-color: 848789
-about-p-size: 18px;
-grid-h2 same as about
-grid-p-size: 16px
-tweet-h2-color: 353738
-tweet-h2-span-color: 848789
-tweet-size: 18px
-tweet-p-size: 24px
-dots-active/dots-outline: a9afb3
-button-section-bg: 282f35
-button-primary: 64c29e
-button-size: 14px
-address-size: 16px / 14px / 14px
-handcrafted-size: 14px
-input-font-size: 20px
-slogan: 24px
-shop-now-size: 14px
-
-cta-button-border: 93979a
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400&display=swap');
 
 body {
