@@ -1,153 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Velo</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
-  <title>Velo</title>
-</head>
+  <body>
+    <!-- MOBILE NAVIGATION -->
+    <div class="mobile-nav">
+      <img src="assets/Logo.png" alt="Logo Image" />
+      <div class="burger" onclick="transformBurgerToX(this)">
+        <div class="burger-line1"></div>
+        <div class="burger-line2"></div>
+        <div class="burger-line3"></div>
+      </div>
+      <nav class="mobile-navigation hide-mobile-navigation">
+        <a href="#">ABOUT US</a>
+        <a href="#">WORK</a>
+        <a href="#">SHOP</a>
+        <a href="#">CONTACT</a>
+      </nav>
+    </div>
 
-<body>
-  <div class="mobile-nav">
-    <img src="assets/Logo.png" alt="Logo Image" />
-    <div class="burger" onclick="transformBurgerToX(this)">
-      <div class="burger-line1"></div>
-      <div class="burger-line2"></div>
-      <div class="burger-line3"></div>
-    </div>
-    <nav class="mobile-navigation hide-mobile-navigation">
-      <a href="#">ABOUT US</a>
-      <a href="#">WORK</a>
-      <a href="#">SHOP</a>
-      <a href="#">CONTACT</a>
-    </nav>
-  </div>
-  <header>
-    <nav class="main-navigation">
-      <a class="include-separator" href="#">ABOUT US</a>
-      <a href="#">WORK</a>
-      <a href="#"><img src="assets/Logo.png" alt="Logo" /></a>
-      <a class="include-separator" href="#">SHOP</a>
-      <a href="#">CONTACT</a>
-    </nav>
-  </header>
-  <main>
-    <section class="flex-container">
-      <img src="assets/Icon.png" alt="Logo Icon" />
-      <h2>A NEW GENERATION OF VINTAGE BIKE</h2>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-        remaining essentially unchanged.</p>
-    </section>
-    <section class="big-grid-container">
-      <div class="big-grid-item-1">
-        <img src="assets/Logo2.png" alt="Bicycle Company" />
-      </div>
-      <div class="big-grid-item-2">
-        <div class="item-2-text">
-          <img src="assets/Icon2.png" alt="Icon" />
-          <h2>VINTAGE OLIVA</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived.
-          </p>
-          <div class="diamond"></div>
-        </div>
-        <div class="item-2-image"></div>
-      </div>
-      <div class="big-grid-item-3">
-        <div class="item-3-text">
-          <img src="assets/Icon4.png" alt="Icon" />
-          <h2>LA BORIOSA</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived.
-          </p>
-          <div class="diamond"></div>
-        </div>
-        <div class="item-3-image"></div>
-      </div>
-      <div class="big-grid-item-4">
-        <img src="assets/Logo3.png" alt="Vintage Logo" />
-      </div>
-      <div class="big-grid-item-5">
-        <img src="assets/Logo4.png" alt="Bicycles Logo" />
-      </div>
-      <div class="big-grid-item-6">
-        <div class="item-6-text">
-          <img src="assets/Icon3.png" alt="Icon" />
-          <h2>RETRÒ BIKE - M. HULOT</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived.
-          </p>
-          <div class="diamond"></div>
-        </div>
-        <div class="item-6-image"></div>
-      </div>
-      <div class="big-grid-item-7"></div>
-    </section>
-    <section class="flex-container twitter-section">
-      <img src="assets/twitter.png" alt="Twitter Icon" />
-      <h2>AOD New York @aod<span> / 35 min</span></h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio
-        porttitor, dictum turpis vitae, pretium ante amet.</p>
-      <div class="tweet-dots">
-        <div class="tweet-dot-active"></div>
-        <div class="tweet-dot"></div>
-        <div class="tweet-dot"></div>
-      </div>
-    </section>
-    <section class="small-grid-container">
-      <div class="small-grid-item1"></div>
-      <div class="small-grid-item2"></div>
-      <div class="small-grid-item3"></div>
-      <div class="small-grid-item4"></div>
-      <div class="small-grid-item5">
-        <div class="image-overlay">
-          <img src="assets/Shape 13.png" alt="Bike Icon" />
-          <p>SHOP NOW</p>
-        </div>
-      </div>
-      <div class="small-grid-item6"></div>
-      <div class="small-grid-item7"></div>
-      <div class="small-grid-item8"></div>
-    </section>
-    <section class="flex-container cta-container">
-      <button class="cta-button">DISCOVER THE SHOP</button>
-    </section>
-    <section class="flex-container newsletter-section">
-      <img src="assets/Logo.png" alt="Logo" />
-      <p class="slogan">Stay on the saddle!</p>
-      <div class="newsletter-flex-container">
-        <input type="text" placeholder="enter your email..." />
-        <button>GO</button>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <address>
-      <span>AOD New York</span><br />
-      2250 Lexington Avenue<br />
-      New York, NY 10035 - info@domain.com
-    </address>
-    <div class="footer-icons">
-      <a href="#"><img src="assets/rs3.png" alt="Twitter"></a>
-      <a href="#"><img src="assets/rs2.png" alt="Facebook"></a>
-      <a href="#"><img src="assets/rs1.png" alt="Pinterest"></a>
-    </div>
-    <div class="copyright-notice">
-      <span>Handcrafted by</span>
-      <img src="assets/handcrafted.svg" alt="Logo Ipsum" />
-    </div>
-  </footer>
-</body>
+    <!-- HEADER IMAGE / DESKTOP NAVIGATION -->
+    <header>
+      <nav class="main-navigation">
+        <a class="include-separator" href="#">ABOUT US</a>
+        <a href="#">WORK</a>
+        <a href="#"><img src="assets/Logo.png" alt="Logo" /></a>
+        <a class="include-separator" href="#">SHOP</a>
+        <a href="#">CONTACT</a>
+      </nav>
+    </header>
 
+    <main>
+      <!-- INTRO SECTION -->
+      <section class="flex-container">
+        <img src="assets/Icon.png" alt="Logo Icon" />
+        <h2>A NEW GENERATION OF VINTAGE BIKE</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged.
+        </p>
+      </section>
+
+      <!-- UPPER GRID -->
+      <section class="big-grid-container">
+        <div class="big-grid-item-1">
+          <img src="assets/Logo2.png" alt="Bicycle Company" />
+        </div>
+        <div class="big-grid-item-2">
+          <div class="item-2-text">
+            <img src="assets/Icon2.png" alt="Icon" />
+            <h2>VINTAGE OLIVA</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived.
+            </p>
+            <div class="diamond"></div>
+          </div>
+          <div class="item-2-image"></div>
+        </div>
+        <div class="big-grid-item-3">
+          <div class="item-3-text">
+            <img src="assets/Icon4.png" alt="Icon" />
+            <h2>LA BORIOSA</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived.
+            </p>
+            <div class="diamond"></div>
+          </div>
+          <div class="item-3-image"></div>
+        </div>
+        <div class="big-grid-item-4">
+          <img src="assets/Logo3.png" alt="Vintage Logo" />
+        </div>
+        <div class="big-grid-item-5">
+          <img src="assets/Logo4.png" alt="Bicycles Logo" />
+        </div>
+        <div class="big-grid-item-6">
+          <div class="item-6-text">
+            <img src="assets/Icon3.png" alt="Icon" />
+            <h2>RETRÒ BIKE - M. HULOT</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived.
+            </p>
+            <div class="diamond"></div>
+          </div>
+          <div class="item-6-image"></div>
+        </div>
+        <div class="big-grid-item-7"></div>
+      </section>
+
+      <!-- TWEET SECTION -->
+      <section class="flex-container twitter-section">
+        <img src="assets/twitter.png" alt="Twitter Icon" />
+        <h2>AOD New York @aod<span> / 35 min</span></h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus
+          ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae,
+          pretium ante amet.
+        </p>
+        <div class="tweet-dots">
+          <div class="tweet-dot-active"></div>
+          <div class="tweet-dot"></div>
+          <div class="tweet-dot"></div>
+        </div>
+      </section>
+
+      <!-- LOWER GRID -->
+      <section class="small-grid-container">
+        <div class="small-grid-item1"></div>
+        <div class="small-grid-item2"></div>
+        <div class="small-grid-item3"></div>
+        <div class="small-grid-item4"></div>
+        <div class="small-grid-item5">
+          <div class="image-overlay">
+            <img src="assets/Shape 13.png" alt="Bike Icon" />
+            <p>SHOP NOW</p>
+          </div>
+        </div>
+        <div class="small-grid-item6"></div>
+        <div class="small-grid-item7"></div>
+        <div class="small-grid-item8"></div>
+      </section>
+
+      <!-- CTA SECTION -->
+      <section class="flex-container cta-container">
+        <button class="cta-button">DISCOVER THE SHOP</button>
+      </section>
+
+      <!-- NEWSLETTER SECTION -->
+      <section class="flex-container newsletter-section">
+        <img src="assets/Logo.png" alt="Logo" />
+        <p class="slogan">Stay on the saddle!</p>
+        <div class="newsletter-flex-container">
+          <input type="text" placeholder="enter your email..." />
+          <button>GO</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <address>
+        <span>AOD New York</span><br />
+        2250 Lexington Avenue<br />
+        New York, NY 10035 - info@domain.com
+      </address>
+      <div class="footer-icons">
+        <a href="#"><img src="assets/rs3.png" alt="Twitter" /></a>
+        <a href="#"><img src="assets/rs2.png" alt="Facebook" /></a>
+        <a href="#"><img src="assets/rs1.png" alt="Pinterest" /></a>
+      </div>
+      <div class="copyright-notice">
+        <span>Handcrafted by</span>
+        <img src="assets/handcrafted.svg" alt="Logo Ipsum" />
+      </div>
+    </footer>
+  </body>
 </html>
